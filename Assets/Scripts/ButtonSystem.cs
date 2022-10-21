@@ -12,8 +12,12 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_plastic;
     public GameObject m_porous;
     public GameObject m_semiporous;
-    public GameObject m_nonporous; 
-
+    public GameObject m_nonporous;
+    public GameObject m_metal;
+    public GameObject m_wood;
+    public GameObject m_bpaplastic;
+    public GameObject m_waxpaper;
+    public GameObject m_tile;
     
 
     public void GetStarted()

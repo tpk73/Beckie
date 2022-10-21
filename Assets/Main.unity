@@ -3279,6 +3279,11 @@ MonoBehaviour:
   m_porous: {fileID: 266288152}
   m_semiporous: {fileID: 0}
   m_nonporous: {fileID: 0}
+  m_metal: {fileID: 0}
+  m_wood: {fileID: 0}
+  m_bpaplastic: {fileID: 0}
+  m_waxpaper: {fileID: 0}
+  m_tile: {fileID: 0}
 --- !u!1 &416701990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9645,7 +9650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1027835037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13098,6 +13103,11 @@ MonoBehaviour:
   m_porous: {fileID: 0}
   m_semiporous: {fileID: 0}
   m_nonporous: {fileID: 0}
+  m_metal: {fileID: 0}
+  m_wood: {fileID: 0}
+  m_bpaplastic: {fileID: 0}
+  m_waxpaper: {fileID: 0}
+  m_tile: {fileID: 0}
 --- !u!4 &1470204578
 Transform:
   m_ObjectHideFlags: 0
@@ -17188,7 +17198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1951512849
 RectTransform:
   m_ObjectHideFlags: 0
