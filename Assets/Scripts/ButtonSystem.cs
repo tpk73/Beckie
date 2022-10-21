@@ -18,6 +18,11 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_bpaplastic;
     public GameObject m_waxpaper;
     public GameObject m_tile;
+    public GameObject m_CAFumingMetal;
+    public GameObject m_CAFumingWood;
+    public GameObject m_CAFumingBPAPlastic;
+    public GameObject m_CAFumingWaxPaper;
+    public GmaeObject m_CAFumingTile;
     
 
     public void GetStarted()
@@ -25,7 +30,16 @@ public class ButtonSystem : MonoBehaviour
         m_mainMenu.SetActive(false);
         m_fingerPrint.SetActive(true);
     }
-    
+    public void Metal()
+    {
+        m_nonporous.SetActive(false);
+        m_metal.SetActive(true);    
+    }
+    public void CAFumingMetal()
+    {
+        m_metal.SetActive(false);
+        m_CAFumingMetal.SetActive(true);
+    }
     public void Latent()
     {
         m_fingerPrint.SetActive(false);
@@ -47,7 +61,37 @@ public class ButtonSystem : MonoBehaviour
     {
         m_latent.SetActive(false);
         m_nonporous.SetActive(true);
-    
+
+    }
+    public void Wood()   
+    {
+        m_nonporous.SetActive(false);
+        m_Wood.SetActive(true);    
+    }
+    public void CAFumingWood()
+    {
+       m_Wood.SetActive(false);
+       m_CAFumingWood.SetActive(true); 
+    }
+    public void BPAPlastic()
+    {
+        m_nonporous.SetActive(false);
+        m_BPAPlastic.SetActive(true);
+    }
+    public void CAFumingBPAPlastic()
+    {
+       m_metal.SetActive(false);
+       m_CAFumingBPAPlastic.SetActive(true);
+    }
+    public void WaxPaper()
+    {
+        m_nonporous.SetActive(false);
+        m_waxpaper.SetActive(true);    
+    }
+    public void CAFumingWaxPaper()
+    {
+        m_metal.SetActive(false);
+        m_CAFumingWaxPaper.SetActive(true);
     }
     public void Back2fp()
     {
@@ -73,15 +117,13 @@ public class ButtonSystem : MonoBehaviour
         m_fingerPrint.SetActive(false);
         m_plastic.SetActive(true);
     }
-    
     public void ReturnToMenu()
     {
         m_fingerPrint.SetActive(false);
         m_mainMenu.SetActive(true); 
     }
-
     public void Quit()
     {
         Application.Quit();
     }
-}
+
