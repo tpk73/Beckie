@@ -14,16 +14,15 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_semiporous;
     public GameObject m_nonporous;
     public GameObject m_metal;
-    public GameObject m_wood;
-    public GameObject m_bpaplastic;
+    public GameObject m_Wood;
+    public GameObject m_BPAPlastic;
     public GameObject m_waxpaper;
     public GameObject m_tile;
     public GameObject m_CAFumingMetal;
     public GameObject m_CAFumingWood;
     public GameObject m_CAFumingBPAPlastic;
     public GameObject m_CAFumingWaxPaper;
-    public GmaeObject m_CAFumingTile;
-    
+    public GameObject m_CAFumingTile;
 
     public void GetStarted()
     {
@@ -33,7 +32,7 @@ public class ButtonSystem : MonoBehaviour
     public void Metal()
     {
         m_nonporous.SetActive(false);
-        m_metal.SetActive(true);    
+        m_metal.SetActive(true);
     }
     public void CAFumingMetal()
     {
@@ -49,7 +48,7 @@ public class ButtonSystem : MonoBehaviour
     {
         m_latent.SetActive(false);
         m_porous.SetActive(true);
-    
+
     }
     public void SemiPorous()
     {
@@ -63,15 +62,15 @@ public class ButtonSystem : MonoBehaviour
         m_nonporous.SetActive(true);
 
     }
-    public void Wood()   
+    public void Wood()
     {
         m_nonporous.SetActive(false);
-        m_Wood.SetActive(true);    
+        m_Wood.SetActive(true);
     }
     public void CAFumingWood()
     {
-       m_Wood.SetActive(false);
-       m_CAFumingWood.SetActive(true); 
+        m_Wood.SetActive(false);
+        m_CAFumingWood.SetActive(true);
     }
     public void BPAPlastic()
     {
@@ -80,13 +79,13 @@ public class ButtonSystem : MonoBehaviour
     }
     public void CAFumingBPAPlastic()
     {
-       m_metal.SetActive(false);
-       m_CAFumingBPAPlastic.SetActive(true);
+        m_metal.SetActive(false);
+        m_CAFumingBPAPlastic.SetActive(true);
     }
     public void WaxPaper()
     {
         m_nonporous.SetActive(false);
-        m_waxpaper.SetActive(true);    
+        m_waxpaper.SetActive(true);
     }
     public void CAFumingWaxPaper()
     {
@@ -96,8 +95,8 @@ public class ButtonSystem : MonoBehaviour
     public void Back2fp()
     {
         m_latent.SetActive(false);
-        m_fingerPrint.SetActive(true);    
-    
+        m_fingerPrint.SetActive(true);
+
     }
     public void Back2latent()
     {
@@ -105,7 +104,7 @@ public class ButtonSystem : MonoBehaviour
         m_semiporous.SetActive(false);
         m_nonporous.SetActive(false);
         m_latent.SetActive(true);
-    
+
     }
     public void Patent()
     {
@@ -120,10 +119,12 @@ public class ButtonSystem : MonoBehaviour
     public void ReturnToMenu()
     {
         m_fingerPrint.SetActive(false);
-        m_mainMenu.SetActive(true); 
+        m_mainMenu.SetActive(true);
     }
     public void Quit()
     {
         Application.Quit();
     }
+}
+
 
