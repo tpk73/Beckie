@@ -79,7 +79,7 @@ public class ButtonSystem : MonoBehaviour
     }
     public void CAFumingBPAPlastic()
     {
-        m_metal.SetActive(false);
+        m_BPAPlastic.SetActive(false);
         m_CAFumingBPAPlastic.SetActive(true);
     }
     public void WaxPaper()
@@ -89,8 +89,18 @@ public class ButtonSystem : MonoBehaviour
     }
     public void CAFumingWaxPaper()
     {
-        m_metal.SetActive(false);
+        m_waxpaper.SetActive(false);
         m_CAFumingWaxPaper.SetActive(true);
+    }
+    public void tile()
+    {
+        m_nonporous.SetActive(false);
+        m_tile.SetActive(true);
+    }
+    public void CAFumingTile()
+    {
+        m_tile.SetActive(true);
+        m_CAFumingTile.SetActive(false);
     }
     public void Back2fp()
     {
