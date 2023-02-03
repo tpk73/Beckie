@@ -13,16 +13,19 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_porous;
     public GameObject m_semiporous;
     public GameObject m_nonporous;
+
     public GameObject m_metal;
     public GameObject m_Wood;
     public GameObject m_BPAPlastic;
     public GameObject m_waxpaper;
     public GameObject m_tile;
+
     public GameObject m_CAFumingMetal;
     public GameObject m_CAFumingWood;
     public GameObject m_CAFumingBPAPlastic;
     public GameObject m_CAFumingWaxPaper;
     public GameObject m_CAFumingTile;
+
     public GameObject m_DyeTypesM;
     public GameObject m_R6GM;
     public GameObject m_ardroxM;
@@ -33,6 +36,7 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_NileRedM;
     public GameObject m_PowderM;
     public GameObject m_PhysicalDeveloperM;
+
     public GameObject m_DyeTypesW;
     public GameObject m_R6GW;
     public GameObject m_ardroxW;
@@ -43,6 +47,7 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_NileRedW;
     public GameObject m_PowderW;
     public GameObject m_PhysicalDeveloperW;
+
     public GameObject m_DyeTypesBPA;
     public GameObject m_R6GBPA;
     public GameObject m_ardroxBPA;
@@ -53,6 +58,7 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_NileRedBPA;
     public GameObject m_PowderBPA;
     public GameObject m_PhysicalDeveloperBPA;
+
     public GameObject m_DyeTypesWP;
     public GameObject m_R6GWP;
     public GameObject m_ardroxWP;
@@ -63,6 +69,7 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_NileRedWP;
     public GameObject m_PowderWP;
     public GameObject m_PhysicalDeveloperWP;
+
     public GameObject m_DyeTypesT;
     public GameObject m_R6GT;
     public GameObject m_ardroxT;
@@ -74,73 +81,48 @@ public class ButtonSystem : MonoBehaviour
     public GameObject m_PowderT;
     public GameObject m_PhysicalDeveloperT;
 
+    public GameObject m_Paper;
+    public GameObject m_Cardboard;
+    public GameObject m_CottenFab;
+    public GameObject m_PolyesterFab;
+
+    public GameObject m_DFOP;
+    public GameObject m_IndaneP;
+    public GameObject m_NinP;
+    public GameObject m_PhysicalDeveloperP;
+
+    public GameObject m_DFOWP;
+    public GameObject m_IndaneWP;
+    public GameObject m_NinWP;
+
+    public GameObject m_DFOCB;
+    public GameObject m_IndaneCB;
+    public GameObject m_NinCB;
+    public GameObject m_PhysicalDeveloperCB;
+
+    public GameObject m_DFOCt;
+    public GameObject m_IndaneCt;
+    public GameObject m_NinCt;
+    public GameObject m_PhysicalDeveloperCt;
+
+    public GameObject m_DFOPoly;
+    public GameObject m_IndanePoly;
+    public GameObject m_NinPoly;
+    public GameObject m_PhysicalDeveloperPoly;
+
+    public GameObject m_DFOW;
+    public GameObject m_IndaneW;
+    public GameObject m_NinW;
+
+
 
     public void GetStarted()
     {
         m_mainMenu.SetActive(false);
         m_fingerPrint.SetActive(true);
     }
-    public void Metal()
-    {
-        m_nonporous.SetActive(false);
-        m_metal.SetActive(true);
-    }
-    public void CAFumingMetal()
-    {
-        m_metal.SetActive(false);
-        m_CAFumingMetal.SetActive(true);
-    }
-    public void DyeTypesM()
-    {
-        m_CAFumingMetal.SetActive(false);
-        m_DyeTypesM.SetActive(true);
-    }
-    public void R6GM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_R6GM.SetActive(true);
-    }
-    public void ardroxM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_ardroxM.SetActive(true); 
-    }
-    public void MBDM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_MBDM.SetActive(true);
-    }
-    public void RAYM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_RAYM.SetActive(true);
-    }
-    public void RAMM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_RAMM.SetActive(true);
-    }
-    public void BasicY40M()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_BasicY40M.SetActive(true);
-    }
-    public void NileRedM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_NileRedM.SetActive(true);
-    }
-    public void PowderM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_PowderM.SetActive(true);
-    }
-    public void PhysicalDeveloperM()
-    {
-        m_DyeTypesM.SetActive(false);
-        m_PhysicalDeveloperM.SetActive(true);
-    }
-        public void Latent()
+
+    public void Latent()
     {
         m_fingerPrint.SetActive(false);
         m_latent.SetActive(true);
@@ -151,138 +133,118 @@ public class ButtonSystem : MonoBehaviour
         m_porous.SetActive(true);
 
     }
+
+    public void Paper()
+    {
+        m_porous.SetActive(false);
+        m_Paper.SetActive(true);
+    }
+    public void DFOP()
+    {
+        m_Paper.SetActive(false);
+        m_DFOP.SetActive(true);
+    }
+    public void IndaneP()
+    {
+        m_Paper.SetActive(false);
+        m_IndaneP.SetActive(true);
+    }
+    public void NinP()
+    {
+        m_Paper.SetActive(false);
+        m_NinP.SetActive(true);
+    }
+    public void PhysicalDeveloperP()
+    {
+        m_Paper.SetActive(false);
+        m_PhysicalDeveloperP.SetActive(true);
+    }
+    
+    public void Cardboard()
+    {
+        m_porous.SetActive(false);
+        m_Cardboard.SetActive(true);
+    }
+    public void DFOCB()
+    {
+        m_Cardboard.SetActive(false);
+        m_DFOCB.SetActive(true);
+    }
+    public void IndaneCB()
+    {
+        m_Cardboard.SetActive(false);
+        m_IndaneCB.SetActive(true);
+    }
+    public void NinCB()
+    {
+        m_Cardboard.SetActive(false);
+        m_NinCB.SetActive(true);
+    }
+    public void PhysicalDeveloperCB()
+    {
+        m_Cardboard.SetActive(false);
+        m_PhysicalDeveloperCB.SetActive(true);
+    }
+
+    public void CottenFab()
+    {
+        m_porous.SetActive(false);
+        m_CottenFab.SetActive(true);
+    }
+    public void DFOCt()
+    {
+        m_CottenFab.SetActive(false);
+        m_DFOCt.SetActive(true);
+    }
+    public void IndaneCt()
+    {
+        m_CottenFab.SetActive(false);
+        m_IndaneCt.SetActive(true);
+    }
+    public void NinCt()
+    {
+        m_CottenFab.SetActive(false);
+        m_NinCt.SetActive(true);
+    }
+    public void PhysicalDeveloperCt()
+    {
+        m_CottenFab.SetActive(false);
+        m_PhysicalDeveloperCt.SetActive(true);
+    }
+
+    public void PolyesterFab()
+    {
+        m_porous.SetActive(false);
+        m_PolyesterFab.SetActive(true);
+    }
+    public void DFOPoly()
+    {
+        m_PolyesterFab.SetActive(false);
+        m_DFOPoly.SetActive(true);
+    }
+    public void IndanePoly()
+    {
+        m_PolyesterFab.SetActive(false);
+        m_IndanePoly.SetActive(true);
+    }
+    public void NinPoly()
+    {
+        m_PolyesterFab.SetActive(false);
+        m_NinPoly.SetActive(true);
+    }
+    public void PhysicalDeveloperPoly()
+    {
+        m_PolyesterFab.SetActive(false);
+        m_PhysicalDeveloperPoly.SetActive(true);
+    }
+
     public void SemiPorous()
     {
         m_latent.SetActive(false);
         m_semiporous.SetActive(true);
 
     }
-    public void NonPorous()
-    {
-        m_latent.SetActive(false);
-        m_nonporous.SetActive(true);
 
-    }
-    public void Wood()
-    {
-        m_nonporous.SetActive(false);
-        m_Wood.SetActive(true);
-    }
-    public void CAFumingWood()
-    {
-        m_Wood.SetActive(false);
-        m_CAFumingWood.SetActive(true);
-    }
-    public void DyeTypesW()
-    {
-        m_CAFumingWood.SetActive(false);
-        m_DyeTypesW.SetActive(true);
-    }
-    public void R6GW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_R6GW.SetActive(true);
-    }
-    public void ardroxW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_ardroxW.SetActive(true);
-    }
-    public void MBDW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_MBDW.SetActive(true);
-    }
-    public void RAYW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_RAYW.SetActive(true);
-    }
-    public void RAMW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_RAMW.SetActive(true);
-    }
-    public void BasicY40W()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_BasicY40W.SetActive(true);
-    }
-    public void NileRedW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_NileRedW.SetActive(true);
-    }
-    public void PowderW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_PowderW.SetActive(true);
-    }
-    public void PhysicalDeveloperW()
-    {
-        m_DyeTypesW.SetActive(false);
-        m_PhysicalDeveloperW.SetActive(true);
-    }
-    public void BPAPlastic()
-    {
-        m_nonporous.SetActive(false);
-        m_BPAPlastic.SetActive(true);
-    }
-    public void CAFumingBPAPlastic()
-    {
-        m_BPAPlastic.SetActive(false);
-        m_CAFumingBPAPlastic.SetActive(true);
-    }
-    public void DyeTypesBPA()
-    {
-        m_CAFumingBPAPlastic.SetActive(false);
-        m_DyeTypesBPA.SetActive(true);
-    }
-    public void R6GBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_R6GBPA.SetActive(true);
-    }
-    public void ardroxBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_ardroxBPA.SetActive(true);
-    }
-    public void MBDBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_MBDBPA.SetActive(true);
-    }
-    public void RAYBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_RAYBPA.SetActive(true);
-    }
-    public void RAMBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_RAMBPA.SetActive(true);
-    }
-    public void BasicY40BPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_BasicY40BPA.SetActive(true);
-    }
-    public void NileRedBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_NileRedBPA.SetActive(true);
-    }
-    public void PowderBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_PowderBPA.SetActive(true);
-    }
-    public void PhysicalDeveloperBPA()
-    {
-        m_DyeTypesBPA.SetActive(false);
-        m_PhysicalDeveloperBPA.SetActive(true);
-    }
     public void WaxPaper()
     {
         m_nonporous.SetActive(false);
@@ -343,6 +305,212 @@ public class ButtonSystem : MonoBehaviour
         m_DyeTypesWP.SetActive(false);
         m_PhysicalDeveloperWP.SetActive(true);
     }
+    public void DFOWP()
+    {
+        m_Paper.SetActive(false);
+        m_DFOWP.SetActive(true);
+    }
+    public void IndaneWP()
+    {
+        m_Paper.SetActive(false);
+        m_IndaneWP.SetActive(true);
+    }
+    public void NinWP()
+    {
+        m_Paper.SetActive(false);
+        m_NinWP.SetActive(true);
+    }
+
+    public void NonPorous()
+    {
+        m_latent.SetActive(false);
+        m_nonporous.SetActive(true);
+
+    }
+   
+    public void Metal()
+    {
+        m_nonporous.SetActive(false);
+        m_metal.SetActive(true);
+    }
+    public void CAFumingMetal()
+    {
+        m_metal.SetActive(false);
+        m_CAFumingMetal.SetActive(true);
+    }
+    public void DyeTypesM()
+    {
+        m_CAFumingMetal.SetActive(false);
+        m_DyeTypesM.SetActive(true);
+    }
+    public void R6GM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_R6GM.SetActive(true);
+    }
+    public void ardroxM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_ardroxM.SetActive(true); 
+    }
+    public void MBDM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_MBDM.SetActive(true);
+    }
+    public void RAYM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_RAYM.SetActive(true);
+    }
+    public void RAMM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_RAMM.SetActive(true);
+    }
+    public void BasicY40M()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_BasicY40M.SetActive(true);
+    }
+    public void NileRedM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_NileRedM.SetActive(true);
+    }
+    public void PowderM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_PowderM.SetActive(true);
+    }
+    public void PhysicalDeveloperM()
+    {
+        m_DyeTypesM.SetActive(false);
+        m_PhysicalDeveloperM.SetActive(true);
+    }
+ 
+    public void Wood()
+    {
+        m_nonporous.SetActive(false);
+        m_Wood.SetActive(true);
+    }
+    public void CAFumingWood()
+    {
+        m_Wood.SetActive(false);
+        m_CAFumingWood.SetActive(true);
+    }
+    public void DyeTypesW()
+    {
+        m_CAFumingWood.SetActive(false);
+        m_DyeTypesW.SetActive(true);
+    }
+    public void R6GW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_R6GW.SetActive(true);
+    }
+    public void ardroxW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_ardroxW.SetActive(true);
+    }
+    public void MBDW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_MBDW.SetActive(true);
+    }
+    public void RAYW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_RAYW.SetActive(true);
+    }
+    public void RAMW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_RAMW.SetActive(true);
+    }
+    public void BasicY40W()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_BasicY40W.SetActive(true);
+    }
+    public void NileRedW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_NileRedW.SetActive(true);
+    }
+    public void PowderW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_PowderW.SetActive(true);
+    }
+    public void PhysicalDeveloperW()
+    {
+        m_DyeTypesW.SetActive(false);
+        m_PhysicalDeveloperW.SetActive(true);
+    }
+    
+    public void BPAPlastic()
+    {
+        m_nonporous.SetActive(false);
+        m_BPAPlastic.SetActive(true);
+    }
+    public void CAFumingBPAPlastic()
+    {
+        m_BPAPlastic.SetActive(false);
+        m_CAFumingBPAPlastic.SetActive(true);
+    }
+    public void DyeTypesBPA()
+    {
+        m_CAFumingBPAPlastic.SetActive(false);
+        m_DyeTypesBPA.SetActive(true);
+    }
+    public void R6GBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_R6GBPA.SetActive(true);
+    }
+    public void ardroxBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_ardroxBPA.SetActive(true);
+    }
+    public void MBDBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_MBDBPA.SetActive(true);
+    }
+    public void RAYBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_RAYBPA.SetActive(true);
+    }
+    public void RAMBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_RAMBPA.SetActive(true);
+    }
+    public void BasicY40BPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_BasicY40BPA.SetActive(true);
+    }
+    public void NileRedBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_NileRedBPA.SetActive(true);
+    }
+    public void PowderBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_PowderBPA.SetActive(true);
+    }
+    public void PhysicalDeveloperBPA()
+    {
+        m_DyeTypesBPA.SetActive(false);
+        m_PhysicalDeveloperBPA.SetActive(true);
+    }
+  
     public void tile()
     {
         m_nonporous.SetActive(false);
@@ -417,6 +585,7 @@ public class ButtonSystem : MonoBehaviour
         m_latent.SetActive(true);
 
     }
+   
     public void Patent()
     {
         m_fingerPrint.SetActive(false);
@@ -437,5 +606,3 @@ public class ButtonSystem : MonoBehaviour
         Application.Quit();
     }
 }
-
-
